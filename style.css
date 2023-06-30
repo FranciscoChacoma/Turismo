@@ -1,0 +1,122 @@
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;   
+}
+
+form{
+    box-shadow: 0 0 20px black;
+    padding: 50px 35px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 380px;
+}
+
+form h2{
+    font-size: 35px;
+    color:black;
+    margin: 0;
+}
+
+form p{
+    font-size: 16px;
+    color:grey;
+    margin-bottom: 35px
+}
+
+.imput-wrapper{
+    position: relative;
+    width: 305px;
+    margin-bottom: 35px;
+}
+
+input{
+    color: black;
+    padding: 20px;
+    width: 80%;
+    border-radius: 30px;
+    border: 0;
+    box-shadow: 0 0 20px gray;
+    outline: none;
+    font-size: 16px;
+}
+
+input::placeholder{
+    font-size: 16px;
+    color: grey;
+}
+
+.input-icon{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 20px;
+    top: 50px;
+    transform: translateY(-55%);
+}
+
+.btn {
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background: linear-gradient(
+        90deg,
+        rgb(121, 9, 9),
+        rgb(211, 110, 16));
+    box-shadow: 0 0 20px gray;
+    color: black;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer; 
+}
+
+.btn{
+    background: rgb(250, 4, 4);
+}
+
+.succes{
+    position: absolute;
+    top: 50px;
+    color: green;
+    font-size: 18px;
+}
+
+.error{
+    position: absolute;
+    top: 50px;
+    color: red;
+    font-size: 18px;
+}
+
+@media(max-width:991px){
+    body{
+        padding: 10px;
+    }
+
+    form{
+        padding: 20px;
+        width: 100%;
+    }
+
+    .input-wrapper {
+        position: relative;
+        width: 88%;
+        margin-bottom: 35%;
+    }
+
+    input{
+        padding: 20px 0px 20px 45px;
+    }
+
+    .input-icon{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+
